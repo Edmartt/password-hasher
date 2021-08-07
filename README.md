@@ -35,3 +35,7 @@ On Windows:
 On Linux:
 
     $ python3 main.py
+
+### Note
+
+- The name **passwords** is needed for the table used in the database.
