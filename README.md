@@ -6,7 +6,7 @@ A little script that ask the user for an input and use the hash function from pa
 
 after clonning, follow these instructions:
 
-- On Windows:
+On Windows:
 
     $ python -m venv name of the virtualenv
     $ env\Scripts\activate
@@ -16,7 +16,7 @@ after clonning, follow these instructions:
     $ set DB_PASSWORD=your MySQL/MariaDB password
     $ set DB_NAME= your database name
 
-- On Linux:
+On Linux:
 
     $ python -m venv name of the virtualenv
     $ env\Scripts\activate
@@ -28,14 +28,14 @@ after clonning, follow these instructions:
 
 ## Running
 
-- On Windows:
+On Windows:
 
     $ python main.py
 
-- On Linux:
+On Linux:
 
     $ python3 main.py
 
 ### Note
 
-The name **passwords** is needed for the table used in the database.
+- The name **passwords** is needed for the table used in the database.
