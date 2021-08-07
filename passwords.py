@@ -1,6 +1,6 @@
 """This module has one class for managing password hashing with passlib."""
 
-from database.db_con import get_connection
+from database.db_con import Database
 from hashing.hashing import get_password_hashed
 
 
@@ -30,7 +30,8 @@ class Password:
 
         :params: password: the string to store on the db server
         """
-        connection, cursor = get_connection()
+        db_connection = Database()
+        connection, cursor = db_connection.get_connection()
         query = 'INSERT INTO passwords(password) VALUES(%s)'
 
         try:
