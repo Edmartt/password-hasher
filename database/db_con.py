@@ -1,4 +1,5 @@
 """Connection for MySQL/MariaDB server."""
+import logging
 from os import environ
 import mysql.connector
 
@@ -17,13 +18,16 @@ class Database:
         the environment variables DB_HOST, DB_USER,
         DB_PASSWORD and DB_NAME
         """
-        connection = mysql.connector.connect(
-            host=self.host,
-            user=self.user,
-            password=self.password,
-            database=self.database
-            )
+        try:
+            connection = mysql.connector.connect(
+                host=self.host,
+                user=self.user,
+                password=self.password,
+                database=self.database
+                )
 
-        cursor = connection.cursor(dictionary=True)
+            cursor = connection.cursor(dictionary=True)
+            return connection, cursor
 
-        return connection, cursor
+        except Exception as ex:
+            logging.exception('Error detected')

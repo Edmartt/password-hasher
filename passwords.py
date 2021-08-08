@@ -1,5 +1,5 @@
 """This module has one class for managing password hashing with passlib."""
-
+import logging
 from database.db_con import Database
 from hashing.hashing import get_password_hashed
 
@@ -39,7 +39,7 @@ class Password:
             connection.commit()
             print('Password stored in database')
         except Exception as ex:
-            raise ex
+            logging.exception('Error Detected: ')
 
         finally:
             connection.close()
