@@ -13,7 +13,7 @@ class Password:
 
         :params: password: the string to become a property of the class.
         """
-        self.password_hash = password
+        self.password = password
 
     @property
     def password(self):
