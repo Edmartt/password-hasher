@@ -19,7 +19,7 @@ On Windows:
 On Linux:
 
     $ python -m venv name of the virtualenv
-    $ env\Scripts\activate
+    $ . env\Scripts\activate
     $ pip install requirements.txt
     $ export DB_HOST=your localhost
     $ export DB_USER=your MySQL/MariaDB user
@@ -36,6 +36,17 @@ On Linux:
 
     $ python3 main.py
 
+
+Example of use:
+    
+    `python(3) main.py  
+     
+     $ Type your plaintext password (it won't be echoed):
+
+     $ Your hashed password: $pbkdf2-sha256$29000$4pwzppRyTkmpdQ4hhJBSig$Yg/yq9VWkrN5NF6phWiN336r.GnwdoGqSkzsOjS8xmo
+
+     $ Password stored in database`
+
 ### Note
 
-- The name **passwords** is needed for the table used in the database.
+- The name *****passwords** is needed for the table used in the database.
