@@ -39,7 +39,7 @@ On Linux:
 
 Example of use:
     
-    `python(3) main.py  
+    ```$ python(3) main.py
      
      $ Type your plaintext password (it won't be echoed):
 
