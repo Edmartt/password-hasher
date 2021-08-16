@@ -4,7 +4,7 @@ A little script that ask the user for an input and use the hash function from pa
 
 ## Install
 
-after clonning, follow these instructions:
+after clonning, follow this instructions:
 
 On Windows:
 
@@ -49,4 +49,4 @@ Example of use:
 
 ### Note
 
-- The name ***passwords is needed for the table used in the database.
+- The name **************passwords** is needed for the table used in the database.
