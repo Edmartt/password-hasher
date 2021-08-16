@@ -49,4 +49,4 @@ Example of use:
 
 ### Note
 
-- The name **************passwords** is needed for the table used in the database.
+- The name **passwords** is needed for the table used in the database.
