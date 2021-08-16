@@ -39,14 +39,14 @@ On Linux:
 
 Example of use:
     
-    ```$ python(3) main.py
+     $ python(3) main.py
      
      $ Type your plaintext password (it won't be echoed):
 
      $ Your hashed password: $pbkdf2-sha256$29000$4pwzppRyTkmpdQ4hhJBSig$Yg/yq9VWkrN5NF6phWiN336r.GnwdoGqSkzsOjS8xmo
 
-     $ Password stored in database`
+     $ Password stored in database
 
 ### Note
 
-- The name *****passwords** is needed for the table used in the database.
+- The name ***passwords is needed for the table used in the database.
