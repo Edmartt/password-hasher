@@ -7,7 +7,7 @@ Helps to generate hashed passwords.
 from passlib.hash import pbkdf2_sha256
 
 
-def get_password_hashed(password, salt_size):
+def get_password_hashed(password: str, salt_size: int) -> str:
     """
     Gets a string an converts it to hash pbkdf2.
 
