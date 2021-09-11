@@ -1,6 +1,6 @@
 # PASSWORD HASHER
 
-A little script that ask the user for an input and use the hash function from passlib library. The main purpose of this project was use a more secure way of storing users data like passwords.
+A script that ask the user for an input and use the hash function from passlib library. The main purpose of this project is to use a more secure way of storing users data like passwords in databases.
 
 ## Install
 
