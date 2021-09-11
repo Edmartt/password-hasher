@@ -2,6 +2,9 @@
 import getpass
 
 from passwords import Password
+from database.db_con import MariaDatabase
+from database.data_layer.passwordstorage import PasswordStorage
+from database.data_layer.querygenerator import QueryGenerator
 
 if __name__ == '__main__':
 
@@ -13,5 +16,7 @@ if __name__ == '__main__':
     hash_object.password = password
 
     print('Your hashed password: {}'.format(hash_object.password_hash))
+    storage = PasswordStorage()
+    querygen = QueryGenerator(MariaDatabase())
 
-    Password.store_password(hash_object.password_hash)
+    storage.store_password(password, querygen)
