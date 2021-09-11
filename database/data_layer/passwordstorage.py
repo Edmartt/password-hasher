@@ -9,4 +9,4 @@ class PasswordStorage():
         :params: password: the hashed string to store on the db server
         """
         query = 'INSERT INTO passwords(password) VALUES(%s)'
-        querygen.select(query, (password,))
+        querygen.insert(query, (password,))

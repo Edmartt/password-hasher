@@ -7,7 +7,7 @@ class QueryGenerator:
     def __init__(self, db_connector: IDatabaseConnector):
         self.db_connector = db_connector
 
-    def select(self, query, *args, all=False):
+    def insert(self, query, *args):
         connection, cursor = self.db_connector.get_connection()
         try:
             cursor.execute(query, (*args))
