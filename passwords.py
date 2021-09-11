@@ -1,6 +1,4 @@
 """This module has one class for managing password hashing with passlib."""
-import logging
-from database.db_con import Database
 from hashing.hashing import get_password_hashed
 
 
@@ -22,24 +20,7 @@ class Password:
 
     @password.setter
     def password(self, password):
+        '''Password setter.
+        :params: password: String to be hashed
+        '''
         self.password_hash = get_password_hashed(password, 8)
-
-    @staticmethod
-    def store_password(password):
-        """Store the hashed password in a MariaDB/MySQL database.
-
-        :params: password: the string to store on the db server
-        """
-        db_connection = Database()
-        connection, cursor = db_connection.get_connection()
-        query = 'INSERT INTO passwords(password) VALUES(%s)'
-
-        try:
-            cursor.execute(query, (password,))
-            connection.commit()
-            print('Password stored in database')
-        except Exception as ex:
-            logging.exception('Error Detected: ')
-
-        finally:
-            connection.close()
