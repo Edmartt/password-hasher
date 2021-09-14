@@ -18,5 +18,4 @@ if __name__ == '__main__':
     print('Your hashed password: {}'.format(hash_object.password_hash))
     storage = PasswordStorage()
     querygen = QueryGenerator(MariaDatabase())
-
     storage.store_password(password, querygen)
