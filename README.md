@@ -50,6 +50,7 @@ Example of use:
 ## Testing
 
 Coverage:
+
      $ coverage run --source=hashing,password.py -m unittest
 
 ### Note
