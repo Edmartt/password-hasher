@@ -47,6 +47,11 @@ Example of use:
 
      $ Password stored in database
 
+## Testing
+
+Coverage:
+     $ coverage run --source=hashing,password.py -m unittest
+
 ### Note
 
 - The name **passwords** is needed for the table used in the database.
