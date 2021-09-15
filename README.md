@@ -51,7 +51,7 @@ Example of use:
 
 Coverage:
 
-     $ coverage run --source=hashing,password.py -m unittest
+    $ coverage run --source=hashing,password.py -m unittest
 
 ### Note
 
